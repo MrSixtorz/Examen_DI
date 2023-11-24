@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ToolBar"
+            android:layout_width="359dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="@string/titulo"
+            app:titleTextColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@tools:sample/avatars"
+            app:srcCompat="@drawable/puntos" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/Ticket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/Fila1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/verdoso">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="@string/producto"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="@string/subtotal"
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="@string/prod1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="@string/precio1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="@string/prod2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="@string/precio2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="@string/prod3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="@string/precio3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="@string/prod4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="@string/precio4" />
+        </TableRow>
+        <TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:layout_span="3"
+                android:background="@color/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/subtotal"
+                android:textColor="@color/verdoso" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="Subtotal" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/costos"
+                android:textColor="@color/verdoso" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="Subtotal" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/cupon"
+                android:textColor="@color/verdoso" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="Subtotal" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/total"
+                android:textColor="@color/verdoso" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="Subtotal" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
